@@ -1,0 +1,28 @@
+yo:
+  atlas:
+    service:
+      _description: create an Atlas Spring Boot microservices
+      _help: date --help
+      _command: date
+  lit:
+    wc:
+      _description: add a web component to a project
+    pwa:
+      _description: create a progressive web application project
+    wcp:
+      _description: create a web component project
+  lit-test:
+    _description: this is just here for testing
+npm:
+  add:
+    _description: add a npm component
+    _file: completion-components.txt
+    _command: date
+  doc:
+    _description: view the documentation for a npm component
+    _file: completion-components.txt
+    _command: date
+  src:
+    _description: view the source for a npm component
+    _file: completion-components.txt
+    _command: date

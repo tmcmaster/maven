@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import pathlib
+import os
+import unittest
+import shlex
+import sys
+import yaml     # pip3 install PyYAML
+
+
+print('ARGS: ', sys.argv);
+
+arguments = sys.argv[1:];
+
+print('arguments: ', arguments);
+
+
+
+document = open('../completions.yaml', 'r')
+completionTree = yaml.load(document, Loader=yaml.FullLoader)
+#print(yaml.dump(completionTree))
+
+pointer = completionTree
+for arg in arguments:
+    pointer = pointer[arg]
+
+command = pointer['_command']
+
+print(yaml.dump(pointer))

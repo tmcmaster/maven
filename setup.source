@@ -1,0 +1,2 @@
+PATH=$PATH ~/Workspace/apps/maven/bin
+complete -C completion.py maven
