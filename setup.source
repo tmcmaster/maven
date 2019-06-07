@@ -1,2 +1,3 @@
-PATH=$PATH ~/Workspace/apps/maven/bin
-complete -C completion.py maven
+export MAVEN_HOME=~/Workspace/apps/maven
+PATH=$PATH:${MAVEN_HOME}/bin
+complete -C ${MAVEN_HOME}/completion.py maven

@@ -8,7 +8,8 @@ import sys
 import time
 import yaml     # pip3 install PyYAML
 
-document = open('completions.yaml', 'r')
+mavenHome = os.environ["MAVEN_HOME"]
+document = open(mavenHome + '/completions.yaml', 'r')
 completionTree = yaml.load(document, Loader=yaml.FullLoader)
 #print(yaml.dump(parsed))
 
